@@ -2,18 +2,19 @@
 import React from "react";
 
 import SideNav from "../_components/SideNav";
+import DocumentEditorSection from "../_components/DocumentEditorSection";
 
 const workspaceDocument = ({params}) => {
    
   return (
     <div>
-        {/* Side NAV */}
+        {/* Side Nav */}
       <div className="">
         <SideNav params={params}/>
       </div>
       {/* {DOcument} */}
       <div className="md:ml-72">
-        Document
+        <DocumentEditorSection params={params}/>
       </div>
     </div>
   );

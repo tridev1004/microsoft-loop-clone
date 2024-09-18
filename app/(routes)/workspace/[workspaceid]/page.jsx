@@ -1,8 +1,11 @@
 import React from 'react'
+import SideNav from './_components/SideNav'
 
-const Workspace = () => {
+const Workspace = ({params}) => {
   return (
-    <div>Workspace</div>
+    <div>
+      <SideNav params={params}/>
+    </div>
   )
 }
 
