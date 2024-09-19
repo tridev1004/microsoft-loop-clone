@@ -20,6 +20,7 @@ import { useRouter } from "next/navigation";
 import uuid4 from "uuid4";
 import { Progress } from "@/components/ui/progress";
 import { toast } from "sonner";
+import NotificationBox from "./NotificationBox";
 
 const SideNav = ({ params }) => {
   const MAX_FILE=5;
@@ -85,7 +86,9 @@ const SideNav = ({ params }) => {
     <div className="fixed hidden h-screen p-5 shadow-md md:w-72 md:block bg-blue-50 ">
       <div className="flex items-center justify-between">
         <Logo />
+        <NotificationBox>
         <Bell className="w-5 h-5 text-gray-500" />
+        </NotificationBox>
       </div>
       <hr className="my-5 "></hr>
       <div>

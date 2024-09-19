@@ -23,9 +23,9 @@ const RichDocumetEditor = ({ params }) => {
       InitEditor();
 
       // Log to inspect the user object and email
-      console.log("Full user object:", clerkUser);  // Log the full user object
-      console.log("User full name:", clerkUser?.fullName);  // Access full name
-      console.log("User email:", clerkUser?.primaryEmailAddress?.emailAddress);  // Access email
+      // console.log("Full user object:", clerkUser);  // Log the full user object
+      // console.log("User full name:", clerkUser?.fullName);  // Access full name
+      // console.log("User email:", clerkUser?.primaryEmailAddress?.emailAddress);  // Access email
     }
   }, [isLoaded, isSignedIn, clerkUser]);
 
@@ -81,7 +81,7 @@ const RichDocumetEditor = ({ params }) => {
   };
 
   return (
-    <div className="lg:-ml-40">
+    <div className="mr-20 lg:-ml-80">
       <div id="editorjs"></div>
     </div>
   );

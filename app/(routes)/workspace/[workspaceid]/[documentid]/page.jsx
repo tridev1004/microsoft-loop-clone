@@ -3,10 +3,12 @@ import React from "react";
 
 import SideNav from "../_components/SideNav";
 import DocumentEditorSection from "../_components/DocumentEditorSection";
+import { Room } from "@/app/Room";
 
 const workspaceDocument = ({params}) => {
    
   return (
+    <Room params={params} >
     <div>
         {/* Side Nav */}
       <div className="">
@@ -17,6 +19,7 @@ const workspaceDocument = ({params}) => {
         <DocumentEditorSection params={params}/>
       </div>
     </div>
+    </Room>
   );
 };
 
