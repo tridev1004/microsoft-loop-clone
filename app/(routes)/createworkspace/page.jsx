@@ -27,7 +27,7 @@ const CreateWorkspace = () => {
     const workspaceId = Date.now();
     const result = await setDoc(doc(db, "Workspace", workspaceId.toString()), {
       workspaceName: workspaceName,
-      emoji: emoji || "",
+      emoji: emoji,
       coverImage: coverImage,
       createdBy: user?.primaryEmailAddress?.emailAddress,
       id: workspaceId,
